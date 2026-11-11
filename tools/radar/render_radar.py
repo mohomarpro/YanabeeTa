@@ -87,7 +87,7 @@ def cover():
       <div class="d" style="display:flex;align-items:center;gap:16px;background:{GD};color:{NAVY};border-radius:999px;padding:20px 42px;font-size:37px;font-weight:800">اسحب لترى الأحداث {ic('arrow-left',44,NAVY)}</div>
     </div>
     <div class="d" style="position:absolute;bottom:60px;right:64px;left:64px;display:flex;justify-content:space-between;align-items:center;font-size:22px;font-weight:700;color:#9fb6d6">
-      <span>{E(WEEK)}</span></div>'''
+      <span>{E(WEEK)}</span><span>{E(DATA.get('author','محمد عمر'))}</span></div>'''
     return page(css, body)
 
 def event(i, e):
