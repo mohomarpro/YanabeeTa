@@ -92,7 +92,8 @@ def cover():
 
 def event(i, e):
     css = f'''body,.stage{{background:{LIGHT};color:{NAVY}}}'''
-    body = f'''{header(i + 1, TOTAL)}
+    body = f'''<img src="file://{KIT}/logo-navy.png" style="position:absolute;left:-230px;top:430px;height:980px;opacity:.055;pointer-events:none">
+    {header(i + 1, TOTAL)}
     <div style="position:absolute;top:150px;right:64px;left:64px;bottom:150px;display:flex;flex-direction:column">
       <div style="display:flex;align-items:center;gap:22px">
         <div class="d" style="width:104px;height:104px;border-radius:50%;background:{NAVY};color:{GD};display:flex;align-items:center;justify-content:center;font-size:66px;font-weight:800;flex:none;font-family:Almarai">{n(i)}</div>
@@ -114,7 +115,8 @@ def cta():
     def row(icon, text, sub=''):
         return f'''<div style="display:flex;align-items:center;gap:26px;background:rgba(255,255,255,.07);border:2px solid rgba(255,255,255,.16);border-radius:30px;padding:20px 34px">
           {ic(icon,58,CY)}<div><div class="d" style="font-size:40px;font-weight:700">{text}</div>{f'<div style="font-size:29px;color:#b9cbe4;margin-top:6px;direction:ltr;text-align:right">{sub}</div>' if sub else ''}</div></div>'''
-    body = f'''{header(TOTAL, TOTAL, True)}
+    body = f'''<img src="file://{KIT}/logo-white.png" style="position:absolute;left:-230px;top:430px;height:980px;opacity:.05;pointer-events:none">
+    {header(TOTAL, TOTAL, True)}
     <div style="position:absolute;top:170px;right:64px;left:64px">
       <div class="d" style="font-size:88px;font-weight:800;line-height:1.3">أرسل الرادار<br><span style="color:{GD}">لشريكك في التربية</span></div>
       <div style="font-size:42px;line-height:1.6;color:#dbe8f7;margin-top:26px">لكل أب وأم ومعلّم يهمّه أمر أبنائه</div>
