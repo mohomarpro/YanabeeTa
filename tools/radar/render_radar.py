@@ -98,14 +98,12 @@ def event(i, e):
         <div class="d" style="width:104px;height:104px;border-radius:50%;background:{NAVY};color:{GD};display:flex;align-items:center;justify-content:center;font-size:66px;font-weight:800;flex:none;font-family:Almarai">{n(i)}</div>
         <div class="d" style="background:#fff;border:2px solid {LN};color:{CYT};border-radius:999px;padding:10px 26px;font-size:28px;font-weight:700">{E(e['tag'])}</div>
       </div>
-      <div class="d" style="font-size:66px;font-weight:800;line-height:1.38;margin-top:34px">{dg(E(e['title']))}</div>
-      <div style="font-size:39px;line-height:1.7;color:{SUB};margin-top:22px;font-weight:400">{E(e['fact'])}</div>
-      <div style="font-size:26px;color:#7a8ba6;margin-top:14px">المصدر: {E(e['src'])}</div>
-      <div style="margin-top:auto;background:#fff;border:3px solid {GD};border-radius:34px;padding:34px 38px 36px;box-shadow:0 10px 30px rgba(0,33,76,.07)">
+      <div class="d" style="font-size:64px;font-weight:800;line-height:1.38;margin-top:40px">{dg(E(e['title']))}</div>
+      <div style="font-size:39px;line-height:1.7;color:{SUB};margin-top:34px;font-weight:400">{E(e['fact'])} <span dir="rtl" style="unicode-bidi:isolate;white-space:nowrap">({E(e['src'])})</span></div>
+      <div style="margin-top:auto;background:#fff;border:3px solid {GD};border-radius:34px;padding:38px 42px 40px;box-shadow:0 10px 30px rgba(0,33,76,.07)">
         <div class="d" style="display:flex;align-items:center;gap:14px;color:#a87800;font-size:30px;font-weight:700">{ic('lightbulb',44,GD)}<span>التوصية التربوية</span></div>
-        <div class="d" style="font-size:48px;font-weight:800;line-height:1.4;margin-top:16px">{E(e['rec'])}</div>
-        <div style="font-size:35px;line-height:1.65;margin-top:12px;color:{NAVY};font-weight:700">{E(e['act'])}</div>
-        <div style="font-size:31px;line-height:1.6;margin-top:12px;color:{SUB}">قل له: «{E(e['say'])}»</div>
+        <div style="font-size:37px;line-height:1.7;margin-top:22px;color:{NAVY};font-weight:700">{E(e['act'])}</div>
+        <div style="font-size:31px;line-height:1.6;margin-top:22px;color:{SUB}">قل له: «{E(e['say'])}»</div>
       </div>
     </div>
     {footer()}'''
