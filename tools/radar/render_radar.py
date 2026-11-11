@@ -99,8 +99,8 @@ def event(i, e):
         <div class="d" style="background:#fff;border:2px solid {LN};color:{CYT};border-radius:999px;padding:10px 26px;font-size:28px;font-weight:700">{E(e['tag'])}</div>
       </div>
       <div class="d" style="font-size:64px;font-weight:800;line-height:1.38;margin-top:40px">{dg(E(e['title']))}</div>
-      <div style="font-size:39px;line-height:1.7;color:{SUB};margin-top:34px;font-weight:400">{E(e['fact'])} <span dir="rtl" style="unicode-bidi:isolate;white-space:nowrap">({E(e['src'])})</span></div>
-      <div style="margin-top:auto;background:#fff;border:3px solid {GD};border-radius:34px;padding:38px 42px 40px;box-shadow:0 10px 30px rgba(0,33,76,.07)">
+      <div style="font-size:39px;line-height:1.7;color:{SUB};margin-top:34px;margin-bottom:44px;font-weight:400">{E(e['fact'])} <span dir="rtl" style="unicode-bidi:isolate;white-space:nowrap;font-size:27px;color:#7a8ba6">({E(e['src'])})</span></div>
+      <div style="margin-top:auto;margin-bottom:80px;background:#fff;border:3px solid {GD};border-radius:34px;padding:38px 42px 40px;box-shadow:0 10px 30px rgba(0,33,76,.07)">
         <div class="d" style="display:flex;align-items:center;gap:14px;color:#a87800;font-size:30px;font-weight:700">{ic('lightbulb',44,GD)}<span>التوصية التربوية</span></div>
         <div style="font-size:37px;line-height:1.7;margin-top:22px;color:{NAVY};font-weight:700">{E(e['act'])}</div>
         <div style="font-size:31px;line-height:1.6;margin-top:22px;color:{SUB}">قل له: «{E(e['say'])}»</div>
