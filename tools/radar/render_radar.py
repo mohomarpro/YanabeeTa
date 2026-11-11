@@ -77,17 +77,17 @@ TOTAL = len(EVENTS) + 2
 def cover():
     css = f'''body,.stage{{background:radial-gradient(120% 90% at 20% 30%,#06356f 0%,{NAVY} 60%,#001634 100%);color:#fff}}'''
     body = f'''{RADAR}
-    <div style="position:absolute;top:56px;right:64px"><img src="file://{KIT}/logo-white.png" style="height:96px"></div>
+    <div style="position:absolute;top:56px;left:64px;display:flex;flex-direction:column;align-items:flex-start;gap:12px"><img src="file://{KIT}/logo-white.png" style="height:96px"><div class="d" style="font-size:26px;font-weight:700;letter-spacing:.5px;color:#9fb6d6;direction:ltr">@YanabeeTa</div></div>
     <div style="position:absolute;top:250px;right:64px;left:64px">
-      <div class="d" style="display:inline-flex;align-items:center;gap:12px;background:rgba(0,192,236,.16);border:2px solid {CY};color:{CY};border-radius:999px;padding:12px 28px;font-size:30px;font-weight:700">{ic('target',34,CY)}<span>فقرة أسبوعية</span></div>
-      <div class="d" style="font-size:176px;font-weight:800;line-height:1.08;margin-top:34px">الرادار<br><span style="color:{GD}">التربوي</span></div>
-      <div style="font-size:50px;font-weight:700;line-height:1.55;margin-top:30px;max-width:820px;color:#dbe8f7">أبرز ما حدث<br>في الأسبوع</div>
+      <div class="d" style="display:inline-flex;align-items:center;gap:12px;background:rgba(0,192,236,.16);border:2px solid {CY};color:{CY};border-radius:999px;padding:11px 26px;font-size:27px;font-weight:700">{ic('target',34,CY)}<span>فقرة أسبوعية</span></div>
+      <div class="d" style="font-size:150px;font-weight:800;line-height:1.1;margin-top:34px">الرادار<br><span style="color:{GD}">التربوي</span></div>
+      <div style="font-size:42px;font-weight:700;line-height:1.55;margin-top:28px;max-width:820px;color:#dbe8f7">ما يهم الأسرة<br>خلال الأسبوع</div>
     </div>
     <div style="position:absolute;bottom:150px;right:64px;display:flex;align-items:center;gap:22px">
-      <div class="d" style="display:flex;align-items:center;gap:16px;background:{GD};color:{NAVY};border-radius:999px;padding:22px 46px;font-size:42px;font-weight:800">اسحب لترى الأحداث {ic('arrow-left',44,NAVY)}</div>
+      <div class="d" style="display:flex;align-items:center;gap:16px;background:{GD};color:{NAVY};border-radius:999px;padding:20px 42px;font-size:37px;font-weight:800">اسحب لترى الأحداث {ic('arrow-left',44,NAVY)}</div>
     </div>
     <div class="d" style="position:absolute;bottom:60px;right:64px;left:64px;display:flex;justify-content:space-between;align-items:center;font-size:28px;font-weight:700;color:#9fb6d6">
-      <span>{E(WEEK)}</span><span style="direction:ltr">@YanabeeTa</span></div>'''
+      <span>{E(WEEK)}</span></div>'''
     return page(css, body)
 
 def event(i, e):
