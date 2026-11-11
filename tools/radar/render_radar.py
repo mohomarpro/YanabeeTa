@@ -52,7 +52,7 @@ RADAR = f'''
  </g>
  <path d="M400 400 L400 10 A390 390 0 0 1 676 124 Z" fill="url(#sw)"/>
  <line x1="400" y1="400" x2="676" y2="124" stroke="{CY}" stroke-width="3" stroke-opacity=".8"/>
- <g fill="{GD}"><circle cx="560" cy="250" r="12"/><circle cx="470" cy="150" r="9"/><circle cx="300" cy="300" r="10"/><circle cx="640" cy="360" r="8"/></g>
+ <g fill="{GD}"><circle cx="560" cy="250" r="12"/><circle cx="470" cy="150" r="9"/><circle cx="300" cy="300" r="10"/></g>
  <g fill="none" stroke="{GD}" stroke-opacity=".5" stroke-width="2"><circle cx="560" cy="250" r="26"/><circle cx="300" cy="300" r="24"/></g>
 </svg>'''
 
@@ -77,16 +77,16 @@ TOTAL = len(EVENTS) + 2
 def cover():
     css = f'''body,.stage{{background:radial-gradient(120% 90% at 20% 30%,#06356f 0%,{NAVY} 60%,#001634 100%);color:#fff}}'''
     body = f'''{RADAR}
-    <div style="position:absolute;top:56px;left:64px;display:flex;flex-direction:column;align-items:flex-start;gap:12px"><img src="file://{KIT}/logo-white.png" style="height:96px"><div class="d" style="font-size:26px;font-weight:700;letter-spacing:.5px;color:#9fb6d6;direction:ltr">@YanabeeTa</div></div>
+    <div style="position:absolute;top:84px;left:64px;direction:ltr;display:flex;flex-direction:column;align-items:flex-start;gap:14px"><img src="file://{KIT}/logo-white.png" style="height:96px"><div style="display:flex;align-items:center;gap:12px;color:#9fb6d6;direction:ltr">{ic('telegram-logo',30,CY)}{ic('whatsapp-logo',30,CY)}<span class="d" style="font-size:26px;font-weight:700;letter-spacing:.5px">@YanabeeTa</span></div></div>
     <div style="position:absolute;top:250px;right:64px;left:64px">
       <div class="d" style="display:inline-flex;align-items:center;gap:12px;background:rgba(0,192,236,.16);border:2px solid {CY};color:{CY};border-radius:999px;padding:11px 26px;font-size:27px;font-weight:700">{ic('target',34,CY)}<span>فقرة أسبوعية</span></div>
-      <div class="d" style="font-size:150px;font-weight:800;line-height:1.1;margin-top:34px">الرادار<br><span style="color:{GD}">التربوي</span></div>
-      <div style="font-size:42px;font-weight:700;line-height:1.55;margin-top:28px;max-width:820px;color:#dbe8f7">ما يهم الأسرة<br>خلال الأسبوع</div>
+      <div class="d" style="font-size:150px;font-weight:800;line-height:1.1;margin-top:58px">الرادار<br><span style="color:{GD}">التربوي</span></div>
+      <div style="font-size:42px;font-weight:700;line-height:1.55;margin-top:56px;max-width:820px;color:#dbe8f7">ما يهم الأسرة<br>خلال الأسبوع</div>
     </div>
-    <div style="position:absolute;bottom:150px;right:64px;display:flex;align-items:center;gap:22px">
+    <div style="position:absolute;bottom:162px;right:64px;display:flex;align-items:center;gap:22px">
       <div class="d" style="display:flex;align-items:center;gap:16px;background:{GD};color:{NAVY};border-radius:999px;padding:20px 42px;font-size:37px;font-weight:800">اسحب لترى الأحداث {ic('arrow-left',44,NAVY)}</div>
     </div>
-    <div class="d" style="position:absolute;bottom:60px;right:64px;left:64px;display:flex;justify-content:space-between;align-items:center;font-size:28px;font-weight:700;color:#9fb6d6">
+    <div class="d" style="position:absolute;bottom:60px;right:64px;left:64px;display:flex;justify-content:space-between;align-items:center;font-size:22px;font-weight:700;color:#9fb6d6">
       <span>{E(WEEK)}</span></div>'''
     return page(css, body)
 
