@@ -77,7 +77,7 @@ TOTAL = len(EVENTS) + 2
 def cover():
     css = f'''body,.stage{{background:radial-gradient(120% 90% at 20% 30%,#06356f 0%,{NAVY} 60%,#001634 100%);color:#fff}}'''
     body = f'''{RADAR}
-    <div style="position:absolute;top:84px;left:64px;direction:ltr;display:flex;flex-direction:column;align-items:flex-start;gap:14px"><img src="file://{KIT}/logo-white.png" style="height:96px"><div style="display:flex;align-items:center;gap:12px;color:#9fb6d6;direction:ltr">{ic('telegram-logo',30,CY)}{ic('whatsapp-logo',30,CY)}<span class="d" style="font-size:26px;font-weight:700;letter-spacing:.5px">@YanabeeTa</span></div></div>
+    <div style="position:absolute;top:84px;left:64px;direction:ltr;display:flex;flex-direction:column;align-items:center;gap:14px"><img src="file://{KIT}/logo-white.png" style="height:96px"><div style="display:flex;align-items:center;gap:12px;color:#9fb6d6;direction:ltr">{ic('telegram-logo',30,'#fff')}{ic('facebook-logo',30,'#fff')}{ic('instagram-logo',30,'#fff')}{ic('x-logo',30,'#fff')}{ic('threads-logo',30,'#fff')}<span class="d" style="font-size:26px;font-weight:700;letter-spacing:.5px">@YanabeeTa</span></div></div>
     <div style="position:absolute;top:250px;right:64px;left:64px">
       <div class="d" style="display:inline-flex;align-items:center;gap:12px;background:rgba(0,192,236,.16);border:2px solid {CY};color:{CY};border-radius:999px;padding:11px 26px;font-size:27px;font-weight:700">{ic('target',34,CY)}<span>فقرة أسبوعية</span></div>
       <div class="d" style="font-size:150px;font-weight:800;line-height:1.1;margin-top:58px">الرادار<br><span style="color:{GD}">التربوي</span></div>
