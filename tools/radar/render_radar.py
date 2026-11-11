@@ -42,7 +42,7 @@ def page(css, body):
     return f'<!doctype html><html lang="ar" dir="rtl"><head><meta charset="utf-8"><style>{BASE}.stage{{position:absolute;inset:0;width:1080px;height:1350px;overflow:hidden}}{css}</style></head><body><div class="stage">{body}</div></body></html>'
 
 RADAR = f'''
-<svg viewBox="0 0 800 800" width="900" height="900" style="position:absolute;left:-250px;top:230px;opacity:.9">
+<svg viewBox="0 0 800 800" width="900" height="900" style="position:absolute;left:-250px;top:262px;opacity:.9">
  <defs>
   <radialGradient id="sw" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="{CY}" stop-opacity=".0"/><stop offset="1" stop-color="{CY}" stop-opacity=".42"/></radialGradient>
  </defs>
@@ -77,7 +77,7 @@ TOTAL = len(EVENTS) + 2
 def cover():
     css = f'''body,.stage{{background:radial-gradient(120% 90% at 20% 30%,#06356f 0%,{NAVY} 60%,#001634 100%);color:#fff}}'''
     body = f'''{RADAR}
-    <div style="position:absolute;top:84px;left:64px;direction:ltr;display:flex;flex-direction:column;align-items:center;gap:14px"><img src="file://{KIT}/logo-white.png" style="height:96px"><div style="display:flex;align-items:center;gap:12px;color:#9fb6d6;direction:ltr">{ic('telegram-logo',30,'#fff')}{ic('facebook-logo',30,'#fff')}{ic('instagram-logo',30,'#fff')}{ic('x-logo',30,'#fff')}{ic('threads-logo',30,'#fff')}<span class="d" style="font-size:26px;font-weight:700;letter-spacing:.5px">@YanabeeTa</span></div></div>
+    <div style="position:absolute;top:70px;left:64px;direction:ltr;display:flex;flex-direction:column;align-items:center;gap:14px"><img src="file://{KIT}/logo-white.png" style="height:96px"><div class="d" style="font-size:26px;font-weight:700;letter-spacing:.5px;color:#9fb6d6;direction:ltr">@YanabeeTa</div><div style="display:flex;align-items:center;gap:16px;direction:ltr">{ic('telegram-logo',30,'#fff')}{ic('facebook-logo',30,'#fff')}{ic('instagram-logo',30,'#fff')}{ic('x-logo',30,'#fff')}{ic('threads-logo',30,'#fff')}</div></div>
     <div style="position:absolute;top:250px;right:64px;left:64px">
       <div class="d" style="display:inline-flex;align-items:center;gap:12px;background:rgba(0,192,236,.16);border:2px solid {CY};color:{CY};border-radius:999px;padding:11px 26px;font-size:27px;font-weight:700">{ic('target',34,CY)}<span>فقرة أسبوعية</span></div>
       <div class="d" style="font-size:150px;font-weight:800;line-height:1.1;margin-top:58px">الرادار<br><span style="color:{GD}">التربوي</span></div>
